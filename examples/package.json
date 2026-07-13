@@ -1,0 +1,14 @@
+{
+  "name": "peeptoon-shopify-webhook-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Copy-paste server that books a Peeptoon shipment for every new Shopify order",
+  "main": "shopify-order-webhook.js",
+  "scripts": {
+    "start": "node shopify-order-webhook.js"
+  },
+  "dependencies": {
+    "@peeptoon/sdk": "^1.0.0",
+    "express": "^4.19.2"
+  }
+}
