@@ -20,6 +20,13 @@
   "bugs": {
     "url": "https://github.com/Peeptoon/peeptoon-sdk/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "src"
+  ],
   "dependencies": {
     "axios": "^1.7.0"
   }
