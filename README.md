@@ -12,9 +12,12 @@ npm install @peeptoon/sdk
 
 Log in to your Peeptoon panel, go to **Settings → Developer API**, and click **Generate API Key**. Keep it secret — anyone with it can book/cancel shipments and read your order data.
 
-## Not a developer? Connect Shopify without writing code
+## Not a developer? Connect your store without writing code
 
-**[docs/SHOPIFY_INTEGRATION.md](docs/SHOPIFY_INTEGRATION.md)** is a step-by-step guide (no coding experience assumed) that gets every new Shopify order automatically booked on Peeptoon, using the ready-made script in [`examples/shopify-order-webhook.js`](examples/shopify-order-webhook.js) — you only fill in your API key and pickup address name.
+Step-by-step guides (no coding experience assumed) that get every new order automatically booked on Peeptoon — you only fill in your API key and pickup address name:
+
+- **Shopify**: [docs/SHOPIFY_INTEGRATION.md](docs/SHOPIFY_INTEGRATION.md), using [`examples/shopify-order-webhook.js`](examples/shopify-order-webhook.js)
+- **Wix**: [docs/WIX_INTEGRATION.md](docs/WIX_INTEGRATION.md), using [`examples/wix-order-webhook.js`](examples/wix-order-webhook.js)
 
 ## Quickstart
 

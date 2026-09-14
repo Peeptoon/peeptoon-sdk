@@ -1,11 +1,13 @@
 {
-  "name": "peeptoon-shopify-webhook-example",
+  "name": "peeptoon-storefront-webhook-examples",
   "version": "1.0.0",
   "private": true,
-  "description": "Copy-paste server that books a Peeptoon shipment for every new Shopify order",
+  "description": "Copy-paste servers that book a Peeptoon shipment for every new order from a connected storefront",
   "main": "shopify-order-webhook.js",
   "scripts": {
-    "start": "node shopify-order-webhook.js"
+    "start": "node shopify-order-webhook.js",
+    "start:shopify": "node shopify-order-webhook.js",
+    "start:wix": "node wix-order-webhook.js"
   },
   "dependencies": {
     "@peeptoon/sdk": "^1.0.0",
