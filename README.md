@@ -18,6 +18,7 @@ Step-by-step guides (no coding experience assumed) that get every new order auto
 
 - **Shopify**: [docs/SHOPIFY_INTEGRATION.md](docs/SHOPIFY_INTEGRATION.md), using [`examples/shopify-order-webhook.js`](examples/shopify-order-webhook.js)
 - **Wix**: [docs/WIX_INTEGRATION.md](docs/WIX_INTEGRATION.md), using [`examples/wix-order-webhook.js`](examples/wix-order-webhook.js)
+- **WooCommerce / WordPress**: [docs/WOOCOMMERCE_INTEGRATION.md](docs/WOOCOMMERCE_INTEGRATION.md), using [`examples/woocommerce-order-webhook.js`](examples/woocommerce-order-webhook.js)
 
 ## Selling on Shopsy?
 

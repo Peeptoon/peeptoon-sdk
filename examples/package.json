@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node shopify-order-webhook.js",
     "start:shopify": "node shopify-order-webhook.js",
-    "start:wix": "node wix-order-webhook.js"
+    "start:wix": "node wix-order-webhook.js",
+    "start:woocommerce": "node woocommerce-order-webhook.js"
   },
   "dependencies": {
     "@peeptoon/sdk": "^1.0.0",
