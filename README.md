@@ -104,6 +104,12 @@ await peeptoon.labels.get(orderId); // GET /orders/:orderId/label
 await peeptoon.account.get(); // GET /account
 ```
 
+### `peeptoon.health()`
+
+```js
+await peeptoon.health(); // GET /health -- no API key required
+```
+
 ## Authentication
 
 Every request sends `Authorization: Bearer <apiKey>` and `Content-Type: application/json` (handled for you — see `src/utils.js`). There's nothing else to configure.

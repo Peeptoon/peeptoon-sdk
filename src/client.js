@@ -1,3 +1,4 @@
+const { request } = require("./utils");
 const Orders = require("./orders");
 const Tracking = require("./tracking");
 const Rates = require("./rates");
@@ -24,6 +25,19 @@ class Peeptoon {
         this.couriers = new Couriers(this);
         this.labels = new Labels(this);
         this.account = new Account(this);
+
+    }
+
+    /**
+     * API health check (no API key required)
+     */
+    async health() {
+
+        return request(
+            this,
+            "GET",
+            "/health"
+        );
 
     }
 
