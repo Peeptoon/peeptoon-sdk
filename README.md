@@ -19,6 +19,10 @@ Step-by-step guides (no coding experience assumed) that get every new order auto
 - **Shopify**: [docs/SHOPIFY_INTEGRATION.md](docs/SHOPIFY_INTEGRATION.md), using [`examples/shopify-order-webhook.js`](examples/shopify-order-webhook.js)
 - **Wix**: [docs/WIX_INTEGRATION.md](docs/WIX_INTEGRATION.md), using [`examples/wix-order-webhook.js`](examples/wix-order-webhook.js)
 
+## Selling on Shopsy?
+
+Shopsy runs on Flipkart's own seller platform, so this one isn't a quick no-code setup — it needs Flipkart's API partner approval and a real developer. See **[docs/SHOPSY_INTEGRATION.md](docs/SHOPSY_INTEGRATION.md)** for what's actually involved before promising a fast turnaround.
+
 ## Quickstart
 
 ```js
