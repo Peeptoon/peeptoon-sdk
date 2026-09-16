@@ -88,6 +88,10 @@ Place a test order on your Shopify store. Within a few seconds, check your Peept
 
 ## Troubleshooting
 
+- **Shopify won't save the webhook / says the URL is invalid**: this is almost always one of three things:
+  1. **The Render service was still asleep.** Render's free tier spins a service down after 15 minutes of no traffic, and the very first request after that can take 30-60+ seconds to wake it back up — long enough that Shopify gives up and rejects the URL as unreachable. Fix: open your Render URL directly in a browser tab first (you'll see an error page, that's fine — it just needs to wake up), wait until Render's dashboard shows the service as live, *then* save the webhook in Shopify.
+  2. **The URL is missing the path.** It must be the full address ending in `/webhooks/shopify/orders-create` — not just `https://your-app-name.onrender.com` on its own.
+  3. **It's not HTTPS.** Render URLs are HTTPS by default, so this usually only happens from a typo — double check you didn't paste `http://`.
 - **Nothing happened**: In Shopify, go back to Settings → Notifications → Webhooks, click your webhook, and check "Recent deliveries" — it shows you exactly what was sent and whether it succeeded or failed.
 - **"Rejected a webhook that didn't match the Shopify signature"** in your Render logs: the signing secret in Step 6 doesn't match what Shopify actually sent — copy it again carefully (no extra spaces).
 - **Order shows up on Peeptoon but wrong weight/COD**: this script guesses at a few things Shopify doesn't directly provide (see the comments in `isCod()` inside the script) — you may need to adjust it for how your store is set up. Ask whoever helped you with GitHub/Render to tweak those few lines.
